@@ -20,7 +20,7 @@ export default {
   },
   methods: {
     fetchTransactions() {
-      axios.get('http://173.82.54.146:5000/daily').then((res) => {
+      axios.get('http://127.0.0.1:5000/daily').then((res) => {
         this.info.push(res.data);
         // console.log(res.data);
       }).catch();
